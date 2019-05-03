@@ -69,23 +69,6 @@ public class Calculator extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/cal.jsp");
         dispatcher.forward(request, response);
  
-		// Another "view" of how to use PrintWriter
-		/*response.setContentType("text/html");
-		response.setHeader("Cache-Control", "no-cache");
-		PrintWriter writer = response.getWriter();
-		StringBuilder sb = new StringBuilder("<html><body>");
-		sb.append("<title>Calculate</title><head>");
-		sb.append("<body>");
-		sb.append("<form action='calc2' method='get'>");
-		sb.append("<input type = 'text' size = '2' name = 'add1' " + "value = " +  add1 +" />+");
-		sb.append("<input type = 'text' size = '2' name = 'add2'"  + "value = " +  add2 + " />=");
-		sb.append("<input type = 'text' size = '4' name = 'sum'"   + "value = " +  sum + " readonly  /> <br/>");
-		sb.append("<input type = 'text' size = '2' name = 'mult1'" + "value = " +  mult1 + " />*");
-		sb.append("<input type = 'text' size = '2' name = 'mult2'" + "value = " +  mult2 + "  />=");
-		sb.append("<input type = 'text' size = '4' name = 'product'" + "value = " + product + " readonly  /><br/>");
-		sb.append("<input type = 'submit' value = 'Submit'/>");
-		sb.append("</form></body></html>");
-		writer.println(sb.toString());*/
 	}
 
 	/**
